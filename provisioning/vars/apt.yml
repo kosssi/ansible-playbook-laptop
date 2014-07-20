@@ -1,4 +1,7 @@
+---
+
+apt_upgrade: false
 apt_default_packages:
   - python-apt
   - unattended-upgrades
-
+  - openjdk-7-jre
