@@ -1,0 +1,4 @@
+apt_default_packages:
+  - python-apt
+  - unattended-upgrades
+

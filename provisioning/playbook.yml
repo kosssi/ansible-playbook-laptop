@@ -1,0 +1,10 @@
+---
+
+- name: Configuration of my computer
+  hosts: all
+  sudo: yes
+  vars_files:
+    - vars/apt.yml
+  roles:
+    - { role: kosssi.apt,      tags: apt      }
+
