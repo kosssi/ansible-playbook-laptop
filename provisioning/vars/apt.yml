@@ -5,3 +5,4 @@ apt_default_packages:
   - python-apt
   - unattended-upgrades
   - openjdk-7-jre
+  - php5

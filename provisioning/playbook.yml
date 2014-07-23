@@ -8,3 +8,4 @@
   roles:
     - { role: kosssi.apt,      tags: apt      }
     - { role: kosssi.phpstorm, tags: phpstorm }
+    - { role: kosssi.composer, tags: composer }
