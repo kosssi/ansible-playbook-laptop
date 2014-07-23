@@ -5,7 +5,9 @@
   sudo: yes
   vars_files:
     - vars/apt.yml
+    - vars/gitconfig.yml
   roles:
-    - { role: kosssi.apt,      tags: apt      }
-    - { role: kosssi.phpstorm, tags: phpstorm }
-    - { role: kosssi.composer, tags: composer }
+    - { role: kosssi.gitconfig, tags: git, sudo: no }
+    - { role: kosssi.apt,       tags: apt      }
+    - { role: kosssi.phpstorm,  tags: phpstorm }
+    - { role: kosssi.composer,  tags: composer }
