@@ -1,7 +1,11 @@
 ---
 
-apt_upgrade: false
-apt_default_packages:
+apt_repositories:
+  - ppa:ansible/ansible
+  - ppa:ondrej/php5
+
+apt_install:
+  - ansible
   - python-apt
   - unattended-upgrades
   - openjdk-7-jre
