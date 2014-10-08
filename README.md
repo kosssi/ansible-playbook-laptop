@@ -3,10 +3,7 @@
 ## Prerequits
 
     sudo apt-get install git ansible
-
-## Install dependency
-
-    sudo make install
+    ansible-galaxy install -r requirements.txt --force
 
 ## Launch playbook
 

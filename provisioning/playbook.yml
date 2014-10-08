@@ -6,6 +6,7 @@
   vars_files:
     - vars/apt.yml
     - vars/gitconfig.yml
+    - vars/phpstorm.yml
   roles:
     - { role: kosssi.gitconfig, tags: gitconfig, sudo: no }
     - { role: kosssi.apt, tags: apt }

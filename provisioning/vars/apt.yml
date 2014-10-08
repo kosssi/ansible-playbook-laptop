@@ -3,10 +3,24 @@
 apt_repositories:
   - ppa:ansible/ansible
   - ppa:ondrej/php5
+  - ppa:chris-lea/node.js
 
 apt_install:
   - ansible
   - python-apt
   - unattended-upgrades
   - openjdk-7-jre
+  - tmux
+  - vim
+  - nmap
+
+  # Multimedia
+  - vlc
+
+  # node devlopment
+  - nodejs
+
+  # php devlopment
   - php5
+  - php5-intl
+  - php5-curl
