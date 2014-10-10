@@ -2,3 +2,4 @@ kosssi.apt,v1.0.0
 kosssi.phpstorm,v1.0.2
 kosssi.composer,v1.0.3
 kosssi.gitconfig,v1.0.0
+ajsalminen.deb_get,v0.9.0

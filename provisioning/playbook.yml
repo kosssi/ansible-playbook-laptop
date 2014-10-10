@@ -5,6 +5,7 @@
   sudo: yes
   vars_files:
     - vars/apt.yml
+    - vars/deb.yml
     - vars/gitconfig.yml
     - vars/phpstorm.yml
   roles:
@@ -12,3 +13,4 @@
     - { role: kosssi.apt, tags: apt }
     - { role: kosssi.phpstorm, tags: phpstorm }
     - { role: kosssi.composer, tags: composer }
+    - { role: ajsalminen.deb_get, tags: deb }
