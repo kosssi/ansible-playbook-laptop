@@ -5,10 +5,12 @@
   sudo: yes
   vars_files:
     - vars/apt.yml
+    - vars/checker.yml
     - vars/deb.yml
     - vars/gitconfig.yml
     - vars/phpstorm.yml
   roles:
+    - { role: kosssi.checker, tags: checker }
     - { role: kosssi.gitconfig, tags: gitconfig, sudo: no }
     - { role: kosssi.apt, tags: apt }
     - { role: kosssi.phpstorm, tags: phpstorm }

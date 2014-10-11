@@ -1,8 +1,11 @@
 # ansible-playbook-laptop
 
+[![Build Status](https://travis-ci.org/kosssi/ansible-playbook-laptop.svg?branch=master)](https://travis-ci.org/kosssi/ansible-playbook-laptop)
+
 ## Prerequits
 
     sudo apt-get install git ansible
+    sudo chmod 777 /etc/ansible
 
 ## Helper
 

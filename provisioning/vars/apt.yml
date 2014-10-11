@@ -6,13 +6,20 @@ apt_repositories:
   - ppa:chris-lea/node.js
 
 apt_install:
-  - ansible
   - python-apt
   - unattended-upgrades
   - openjdk-7-jre
   - tmux
   - vim
   - nmap
+
+  # devlopment
+  - ansible
+  - vagrant
+  - nfs-server
+
+  # Web
+  - chromium-browser
 
   # Multimedia
   - vlc

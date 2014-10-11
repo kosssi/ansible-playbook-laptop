@@ -1,0 +1,9 @@
+---
+
+check_roles:
+  - { name: kosssi.checker, md5: 1bd9058f50e2c413f72b9aaf3ddd1cbd }
+  - { name: kosssi.apt, md5: 2d9d8110d773fca8c593d8fda01ee61c }
+  - { name: kosssi.phpstorm, md5: 30878c60281608d58ecc1e2b14654711 }
+  - { name: kosssi.composer, md5: 7ce30b53f7a00e7e8737d0542e8e56ad }
+  - { name: kosssi.gitconfig, md5: 2c41167b6eedd8a1ffab27a51d06551d }
+  - { name: ajsalminen.deb_get, md5: d999414f21b3ec6de2068ebd48ae2d10 }
