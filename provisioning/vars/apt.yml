@@ -12,6 +12,7 @@ apt_install:
   - tmux
   - vim
   - nmap
+  - unrar
 
   # devlopment
   - ansible
