@@ -1,7 +1,7 @@
 ---
 
 - name: Configuration of my computer
-  hosts: all
+  hosts: localhost
   sudo: yes
   vars_files:
     - vars/apt.yml

@@ -11,8 +11,7 @@ before_install:
   - sudo apt-get install -y ansible libmemcached-dev
 
 install:
-  - sudo chmod 777 /etc/ansible
   - ansible-galaxy install -r requirements.txt --force
 
 script:
-  - sudo ansible-playbook -i provisioning/hosts/localhost provisioning/playbook.yml
+  - sudo ansible-playbook provisioning/playbook.yml
