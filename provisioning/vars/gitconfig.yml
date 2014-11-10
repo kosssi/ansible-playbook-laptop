@@ -3,7 +3,7 @@
 git_config:
   user:
     name: Simon Constans
-    email: kosssi@gmail.com
+    email: simonc@linux.com
   color:
     branch: auto
     diff: auto
