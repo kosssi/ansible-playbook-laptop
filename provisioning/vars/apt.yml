@@ -3,7 +3,6 @@
 apt_repositories:
   - ppa:ansible/ansible
   - ppa:ondrej/php5
-  - ppa:chris-lea/node.js
 
 apt_install:
   - python-apt
@@ -24,10 +23,11 @@ apt_install:
   # Multimedia
   - vlc
 
-  # node devlopment
-  - nodejs
-
   # php devlopment
   - php5
   - php5-intl
   - php5-curl
+
+apt_remove:
+  # replace by nvm
+  - nodejs

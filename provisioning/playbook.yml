@@ -8,6 +8,7 @@
     - vars/checker.yml
     - vars/deb.yml
     - vars/gitconfig.yml
+    - vars/node.yml
     - vars/phpstorm.yml
   roles:
     - { role: kosssi.checker, tags: checker }
@@ -16,3 +17,4 @@
     - { role: kosssi.phpstorm, tags: phpstorm }
     - { role: kosssi.composer, tags: composer }
     - { role: ajsalminen.deb_get, tags: deb }
+    - { role: ansible-nvm, tags: nvm, sudo: false }

@@ -1,0 +1,7 @@
+---
+nvm:
+  user: 'simonc'
+  version: v0.17.3
+  node_version: '0.10'
+  packages:
+    - keybase-installer
