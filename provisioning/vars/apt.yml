@@ -16,6 +16,7 @@ apt_install:
   - baobab
   - gparted
   - tree
+  - inotify-tools
 
   # devlopment
   - ansible
