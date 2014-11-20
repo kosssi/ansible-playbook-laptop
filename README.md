@@ -19,3 +19,9 @@ Launch playbook
 
     ansible-galaxy install -r requirements.txt --force
     sudo ansible-playbook provisioning/playbook.yml
+
+Add pgp key
+-----------
+
+    keybase-install
+    keybase login
