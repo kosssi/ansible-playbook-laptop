@@ -12,6 +12,7 @@ apt_install:
   - vim
   - nmap
   - unrar
+  - baobab
 
   # devlopment
   - ansible
