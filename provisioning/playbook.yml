@@ -17,4 +17,4 @@
     - { role: kosssi.phpstorm, tags: phpstorm }
     - { role: kosssi.composer, tags: composer }
     - { role: ajsalminen.deb_get, tags: deb }
-    - { role: ansible-nvm, tags: nvm, sudo: false }
+    - { role: ahmednuaman.nvm-ahmed, tags: nvm, sudo: false }
