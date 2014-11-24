@@ -3,6 +3,7 @@
 apt_repositories:
   - ppa:ansible/ansible
   - ppa:ondrej/php5
+  - ppa:nviennot/tmate
 
 apt_install:
   - python-apt
@@ -17,6 +18,7 @@ apt_install:
   # devlopment
   - ansible
   - nfs-server
+  - tmate
 
   # Web
   - chromium-browser
