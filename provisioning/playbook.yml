@@ -9,7 +9,6 @@
     - vars/deb.yml
     - vars/gitconfig.yml
     - vars/node.yml
-    - vars/phpstorm.yml
   roles:
     - { role: kosssi.checker, tags: checker }
     - { role: kosssi.gitconfig, tags: gitconfig, sudo: no }
