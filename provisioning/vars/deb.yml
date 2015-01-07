@@ -1,5 +1,5 @@
 ---
 
 packages:
-  - { url: 'http://download.virtualbox.org/virtualbox/4.3.18/', filename: virtualbox-4.3_4.3.18-96516~Ubuntu~raring_amd64.deb }
+  - { url: 'http://download.virtualbox.org/virtualbox/4.3.20/', filename: virtualbox-4.3_4.3.20-96996~Ubuntu~raring_amd64.deb }
   - { url: 'https://dl.bintray.com/mitchellh/vagrant/', filename: vagrant_1.6.5_x86_64.deb }
