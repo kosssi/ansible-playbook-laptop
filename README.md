@@ -18,7 +18,7 @@ Launch playbook
 ---------------
 
     ansible-galaxy install -r requirements.txt --force
-    sudo ansible-playbook provisioning/playbook.yml
+    sudo ansible-playbook provisioning/playbook.yml -vvvv
 
 Add pgp key
 -----------
