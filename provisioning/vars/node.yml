@@ -1,6 +1,6 @@
 ---
 nvm:
-  user: 'simonc'
+  user: "{{ config.login }}"
   version: v0.17.3
   node_version: '0.10'
   packages:

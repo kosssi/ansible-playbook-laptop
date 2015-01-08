@@ -4,6 +4,7 @@
   hosts: localhost
   sudo: yes
   vars_files:
+    - vars/config.yml
     - vars/apt.yml
     - vars/checker.yml
     - vars/deb.yml
@@ -11,7 +12,7 @@
     - vars/node.yml
   roles:
     - { role: kosssi.checker, tags: checker }
-    - { role: kosssi.gitconfig, tags: gitconfig, sudo: no }
+    - { role: kosssi.gitconfig, tags: gitconfig, sudo: false }
     - { role: kosssi.apt, tags: apt }
     - { role: kosssi.phpstorm, tags: phpstorm }
     - { role: kosssi.composer, tags: composer }

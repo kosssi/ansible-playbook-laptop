@@ -2,8 +2,8 @@
 
 git_config:
   user:
-    name: Simon Constans
-    email: simonc@linux.com
+    name: "{{ config.username }} {{ config.lastname }}"
+    email: "{{ config.email }}"
   color:
     branch: auto
     diff: auto
