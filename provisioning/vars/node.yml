@@ -1,8 +1,8 @@
 ---
 nvm:
   user: "{{ config.login }}"
-  version: v0.17.3
-  node_version: '0.10'
+  version: v0.23.2
+  node_version: '0.10.36'
   packages:
     - keybase-installer
     - gulp
