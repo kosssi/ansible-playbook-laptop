@@ -5,3 +5,5 @@ nvm:
   node_version: '0.10'
   packages:
     - keybase-installer
+    - gulp
+    - bower
