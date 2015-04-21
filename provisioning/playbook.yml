@@ -11,7 +11,7 @@
     - vars/gitconfig.yml
     - vars/node.yml
   roles:
-    - { role: kosssi.checker, tags: checker }
+#    - { role: kosssi.checker, tags: checker }
     - { role: kosssi.gitconfig, tags: gitconfig, sudo: false }
     - { role: kosssi.apt, tags: apt }
     - { role: kosssi.phpstorm, tags: phpstorm }
