@@ -1,0 +1,64 @@
+{
+    "variables": {
+        "alias": "vivid",
+        "disk_size": "8192",
+        "distro" : "xubuntu",
+        "headless": "false",
+        "iso_checksum": "586604cdb814f906f7c18345138f503b",
+        "iso_checksum_type": "md5",
+        "iso_url": "http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/15.04/release/xubuntu-15.04-desktop-amd64.iso",
+        "out_dir": "~/packer/kosssi/box/{{isotime \"2006-01-02\"}}",
+        "shutdown_command": "echo 'shutdown -P -h now' > shutdown.sh; echo 'vagrant'|sudo -S sh 'shutdown.sh'",
+        "hostname": "vagrant",
+        "ssh_password": "vagrant",
+        "ssh_username": "vagrant",
+        "ssh_wait_timeout": "1h",
+        "vmname": "xubuntu-15.04-amd64"
+    },
+    "builders": [
+        {
+            "type": "virtualbox-iso",
+            "boot_wait": "4s",
+            "disk_size": "{{ user `disk_size`}}",
+            "guest_os_type": "Ubuntu_64",
+            "headless": "{{ user `headless`}}",
+            "http_directory": ".",
+            "iso_checksum_type": "{{ user `iso_checksum_type` }}",
+            "iso_checksum": "{{ user `iso_checksum` }}",
+            "iso_url": "{{ user `iso_url` }}",
+            "shutdown_command": "{{user `shutdown_command`}}",
+            "ssh_password": "{{ user `hostname`}}",
+            "ssh_username": "{{ user `ssh_username`}}",
+            "ssh_wait_timeout": "{{ user `ssh_wait_timeout`}}",
+            "virtualbox_version_file": ".vbox_version",
+            "vm_name": "{{ user `vmname`}}",
+            "guest_additions_mode": "attach",
+            "vboxmanage": [
+                [ "modifyvm", "{{.Name}}", "--memory", "1024" ],
+                [ "modifyvm", "{{.Name}}", "--cpus",   "2"    ]
+            ],
+            "boot_command": [
+                "<esc><esc><enter><wait>",
+                "/install/vmlinuz noapic ",
+                "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
+                "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
+                "hostname={{ .Name }} ",
+                "fb=false debconf/frontend=noninteractive ",
+                "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA ",
+                "keyboard-configuration/variant=USA console-setup/ask_detect=false ",
+                "passwd/user-fullname={{ user `ssh_username` }} ",
+                "passwd/user-password={{ user `ssh_password` }} ",
+                "passwd/user-password-again={{ user `ssh_password` }} ",
+                "passwd/username={{ user `ssh_username` }} ",
+                "initrd=/install/initrd.gz -- <enter>"
+            ]
+        }
+    ],
+    "post-processors": [
+        {
+            "keep_input_artifact": false,
+            "output": "box/{{.Provider}}/ubuntu1504-desktop-{{user `cm`}}{{user `cm_version`}}-{{user `version`}}.box",
+            "type": "vagrant"
+        }
+    ]
+}

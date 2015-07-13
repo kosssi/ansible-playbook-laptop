@@ -10,6 +10,7 @@
     - vars/deb.yml
     - vars/gitconfig.yml
     - vars/node.yml
+    - vars/packer.yml
   roles:
 #    - { role: kosssi.checker, tags: checker }
     - { role: kosssi.gitconfig, tags: gitconfig, sudo: false }
@@ -18,3 +19,4 @@
     - { role: kosssi.composer, tags: composer }
     - { role: ajsalminen.deb_get, tags: deb }
     - { role: ahmednuaman.nvm-ahmed, tags: nvm, sudo: false }
+    - { role: groover.packerio, tags: packer, sudo: false }

@@ -5,3 +5,4 @@ kosssi.composer,v1.0.3
 kosssi.gitconfig,v1.0.0
 ajsalminen.deb_get,v0.9.0
 ahmednuaman.nvm-ahmed,v1.0.10
+groover.packerio,1.1.0
