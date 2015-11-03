@@ -28,6 +28,7 @@ apt_install:
 
   # Multimedia
   - vlc
+  - clementine
 
   # php devlopment
   - php5
@@ -37,3 +38,5 @@ apt_install:
 apt_remove:
   # replace by nvm
   - nodejs
+  - gnome-sudoku
+  - gnome-mines
